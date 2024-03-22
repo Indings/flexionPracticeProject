@@ -16,31 +16,31 @@ public class TriangleAnalysisUnitTests {
 Edge Cases! maybe look at "almost" cases - almost right triangle, etc.
  */
     @Test
-    void testRealTriangle(){
+    void test_Real_Triangle(){
         assertEquals("Not a triangle", triangleAnalysis.identifyTriangle(notATriangle));
     }
     @Test
-    void testRight() {
+    void test_Right() {
         assertEquals("Right", triangleAnalysis.identifyAngleType(rightScalene[0],rightScalene[1],rightScalene[2]));
     }
     @Test
-    void testAcute(){
+    void test_Acute(){
         assertEquals("Acute", triangleAnalysis.identifyAngleType(acuteIsosceles[0],acuteIsosceles[1],acuteIsosceles[2]));
     }
     @Test
-    void testObtuse(){
+    void test_Obtuse(){
         assertEquals("Obtuse",triangleAnalysis.identifyAngleType(obtuseScalene[0],obtuseScalene[1],obtuseScalene[2]));
     }
     @Test
-    void testEquilateral(){
+    void test_Equilateral(){
         assertEquals("Equilateral", triangleAnalysis.identifySideType(equilateral[0],equilateral[1],equilateral[2]));
     }
     @Test
-    void testScalene(){
+    void test_Scalene(){
         assertEquals("Scalene", triangleAnalysis.identifySideType(obtuseScalene[0],obtuseScalene[1],obtuseScalene[2]));
     }
     @Test
-    void testIsosceles(){
+    void test_Isosceles(){
         assertEquals("Isosceles", triangleAnalysis.identifySideType(acuteIsosceles[0],acuteIsosceles[1],acuteIsosceles[2]));
     }
 }
