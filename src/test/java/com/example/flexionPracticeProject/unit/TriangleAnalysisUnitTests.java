@@ -1,4 +1,4 @@
-package com.example.flexionPraciceProject.unit;
+package com.example.flexionPracticeProject.unit;
 import com.example.service.TriangleAnalysis;
 import org.junit.jupiter.api.Test;
 

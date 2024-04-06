@@ -1,4 +1,4 @@
-package com.example.flexionPraciceProject;
+package com.example.flexionPracticeProject;
 
 import com.example.service.TriangleAnalysis;
 import com.example.utils.InputValidationUtils;
