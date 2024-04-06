@@ -2,20 +2,15 @@ package com.example.flexionPracticeProject;
 
 import com.example.service.TriangleAnalysis;
 import com.example.utils.InputValidationUtils;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.Scanner;
 
-@SpringBootApplication
 public class FlexionPracticeProjectApplication {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		InputValidationUtils inputValidationUtils = new InputValidationUtils();
 		float[] sideLengths;
-
-		SpringApplication.run(FlexionPracticeProjectApplication.class, args);
 
 		while(true) {
 			System.out.println("would you like to identify a triangle? (y/n)");
