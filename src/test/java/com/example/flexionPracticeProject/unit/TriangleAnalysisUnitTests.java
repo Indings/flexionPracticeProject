@@ -12,13 +12,17 @@ public class TriangleAnalysisUnitTests {
     float [] obtuseScalene = new float[]{1.7f,1.5f,2.8f};
     float [] equilateral = new float[]{3,3,3};
     float [] notATriangle = new float[]{1000,4,15};
-/*
-Edge Cases! maybe look at "almost" cases - almost right triangle, etc.
- */
+    float [] degenerateTriangle = new float[]{5,5,10};
+    float [] negativeSideLenTriangle = new float[]{3,4,-5};
+
     @Test
     void test_Real_Triangle(){
         assertEquals("Not a triangle", triangleAnalysis.identifyTriangle(notATriangle));
     }
+    @Test
+    void test_Degenerate_Triangle() {assertEquals("Not a triangle",triangleAnalysis.identifyTriangle(degenerateTriangle));}
+    @Test
+    void test_Negative_Side_Length() {assertEquals("Not a triangle", triangleAnalysis.identifyTriangle(negativeSideLenTriangle));}
     @Test
     void test_Right() {
         assertEquals("Right", triangleAnalysis.identifyAngleType(rightScalene[0],rightScalene[1],rightScalene[2]));
